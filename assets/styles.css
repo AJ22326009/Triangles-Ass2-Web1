@@ -1,24 +1,26 @@
 body{
-    color: #5C7285;
-    background-color: #E2E0C8;
+    color: #205781;
+    background-color: #98D2C0;
 }
 
 header{
+    font-size: 25px;
+    
+}
+
+header,.detail,h1,h2{
     text-align: center;
 }
 
 #navigation{
-    /* visibility: hidden; */
     position: fixed;
-    width: 300px;
+    width: min(45%, 300px);
     text-transform: uppercase;
     height: 100%;
     border-right: solid;
+    
 }
 
-#navigation header{
-    font-size: 2rem;
-}
 
 #navigation li{
     
@@ -32,7 +34,7 @@ header{
 .link{
     text-decoration: none;
     color: inherit;
-    padding-left: 30px;
+    
 }
 
 #navigation ul{
@@ -40,15 +42,34 @@ header{
     padding: 0;
 }
 
-img{
-    margin: 0 auto;
-}
 main{
-    position: absolute;
-    margin-left: 310px;
-    padding: 0 30px;
+    margin-left: min(48%, 310px);
+    /* padding: 0 30px; */
+
 }
 
 .detail,li,figure{
     font-size: 20px;
+}
+
+.detail{
+    text-align: center;
+}
+
+img{
+    border: #4F959D 2px solid;
+    width: 200px;
+    border-radius: 5px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    background-color: #F6F8D5;
+    border-radius: 20px;
+    border: #4F959D 2px solid;
 }
