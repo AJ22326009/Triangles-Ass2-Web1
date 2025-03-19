@@ -5,9 +5,20 @@ body{
 
 header{
     font-size: 25px;
-    
+    font-weight: bold;
 }
 
+h1{
+    color: #F6F8D5;
+    font-weight: bold;
+    background-color: #205781;
+    border:#4F959D 3px solid ;
+    border-radius: 20px;
+}
+
+h2{
+    text-decoration:underline;
+}
 header,.detail,h1,h2{
     text-align: center;
 }
@@ -71,5 +82,5 @@ section{
     padding-bottom: 20px;
     background-color: #F6F8D5;
     border-radius: 20px;
-    border: #4F959D 2px solid;
+    border: #4F959D 3px solid;
 }
