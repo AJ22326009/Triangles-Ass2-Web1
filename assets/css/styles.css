@@ -1,9 +1,12 @@
+/* color palette used: https://colorhunt.co/palette/2057814f959d98d2c0f6f8d5 */
+
 body{
     color: #205781;
     background-color: #98D2C0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* header sticks on top of the #navigation i.e is not affected by scroll */
 header{
     position: sticky;
     top: 0;
@@ -13,10 +16,12 @@ header{
     text-align: center;
 }
 
+/* specific font family for the headings*/
 h1,h2,h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* makes the title stand out */
 h1{
     color: #F6F8D5;
     font-weight: bold;
@@ -25,25 +30,28 @@ h1{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* used by images, section and h1 to design their borders */
 .border{
     border:#4F959D 3px solid ;
 }
 
+/* unique underline feature */
 h2{
     text-decoration:underline;
     margin-bottom: 0;
 }
 
+/* by default, #navigation's position is fixed i.e. will not move with scroll */
 #navigation{
     position: fixed;
     width: 300px;
-    text-transform: uppercase;
-    height: 100%;
+    text-transform: uppercase; /* all texts are in upper case */
+    height: 100%;/* takes full height by default */
     border-right: solid;
     background-color: #98D2C0;;
 }
 
-
+/* remove all default stylings of li and give it my own styling */
 #navigation li{
     list-style: none;
     border-top: 1px solid;
@@ -51,43 +59,47 @@ h2{
     font-size: large;
 }
 
+/* removed all default styling */
 .link{
     text-decoration: none;
     color: inherit;
     padding-left: 20px;
 }
 
+/* remove the default indentation of the unordered list */
 #navigation ul{
     padding: 0;
 }
 
+/* by default, starts 310px from the left to give space to the fixed table of content (#navigation) */
 main{
     margin-left: 310px;
+    text-align: center; /* all text in main centered ...*/
 }
 
-main{
-    text-align: center;
-}
-
+/* ... except text in li */
 main li{
     text-align: left;
 }
 
+/* unique style to the markers of li in main i.e. the numberings and bullet points */
 main li::marker{
     font-weight: bold;
 }
 
+/* styles the .detail class (li and p in main)*/
 .detail{
     font-size: 20px;
-    text-align: center;
     font-weight: 150;
 }
 
+/* makes sure it fit all viewports */
 img{
     width: 200px;
     border-radius: 5px;
 }
 
+/* separates the sections */
 section{
     display: flex;
     align-items: center;
@@ -99,19 +111,24 @@ section{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* uqique styling to the referenced link */
 #reference a{
     color: #205781;
 }
 
+/* when hovered */
 #reference a:hover{
     font-weight: bold;
 }
 
+/* when visited */
 #reference a:visited{
     color: #4F959D;
 }
 
+/* styles for smaller viewports */
 @media (max-width: 768px) {
+    /* sticky on top of the page, short and scrolls*/
     #navigation{
         position: sticky;
         height: 200px;
@@ -120,6 +137,7 @@ section{
         border: solid;
     }
 
+    /* no margin needed for smaller viewport */
     main{
         margin: 0;
     }
